@@ -10,8 +10,7 @@ module.exports = {
     devtool: 'source-map', // this is part of the problem, but not all of it
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js',
-        libraryTarget: "umd"
+        filename: '[name].js'
     },
     plugins: [
         new CleanWebpackPlugin("./dist") // for removing the previous build
